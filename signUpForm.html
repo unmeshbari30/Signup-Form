@@ -1,0 +1,107 @@
+<html>
+
+<head>
+    <title>Signup Form</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            background-color: black;
+            color: white;
+        }
+
+        .mainContainer {
+            width: 50%;
+            margin: 100 auto;
+            color: white;
+        }
+
+        .inputField {
+            color: white;
+            border: none;
+            background-color: transparent;
+            line-height: normal;
+            padding: 10px;
+            font-size: 24px;
+            font-weight: 300;
+            border-bottom: 1px solid white;
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        input::placeholder {
+            color: white;
+        }
+
+        .subButton {
+            width: 200px;
+            height: 50px;
+            font-size: large;
+        }
+
+        .heading {
+            color: white;
+            font-family: Inter;
+            font-size: 64px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin: 0px;
+        }
+
+        .inputField:focus {
+            outline: none;
+            box-shadow: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header></header>
+
+    <main class="mainContainer">
+
+        <form action="/" method="post" class="form">
+            <h1 class="heading">Signup</h1>
+
+            <input class="inputField" type="text" placeholder="Full Name" name="full_name" required>
+            <input class="inputField" type="email" placeholder="Email" name="email" required>
+            <input class="inputField" type="password" placeholder="Password" name="pass" required>
+            <input class="inputField" type="password" placeholder="Confirm Password" name="con_pass" required>
+
+            <input class="inputField" type="date" placeholder="MM/DD/YYYY" name="con_pass" required>
+
+            <div class="radioButtons">
+                <input type="radio" name="role" id="job" required> 
+                <label for="job">Student</label>
+                <input type="radio" name="role" id="work" required>
+                <label for="work">Employee</label>
+            </div>
+
+            <div class="checkDiv">
+
+                <input type="checkbox" id="condition" checked>
+                <label for="condition">I agree to all the terms and conditions</label>
+            </div>
+
+            <button class="subButton">
+                Signup
+            </button>
+
+
+        </form>
+    </main>
+
+    <footer></footer>
+
+
+</body>
+
+</html>
